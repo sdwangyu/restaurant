@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>restaurant</class>
+ <widget class="QWidget" name="restaurant">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1365</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>restaurant</string>
+  </property>
+  <widget class="QStackedWidget" name="mainstack">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1341</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="mainwindow">
+    <widget class="QPushButton" name="customerorderBtn">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>用户点菜</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="serverBtn">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上菜管理</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chefworkBtn">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>20</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>厨师做菜</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="deputywindow">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>1311</width>
+       <height>571</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="orderdeskwindow">
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>281</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>用户选择餐桌，确认后跳转到点菜界面</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>521</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>房间，桌号，人数等信息，进行点击选择</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>70</y>
+         <width>101</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>房间、大厅等选择</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>290</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>确认</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="orderdishwindoww">
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>251</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>用户进行点菜，选择菜，并列出已选菜</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>401</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出菜的信息</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>50</y>
+         <width>161</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出用户已点的菜</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>430</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="serverwindow">
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>361</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出服务员和对应桌子号，服务员对相应桌号的菜单进行管理</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>121</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出服务员及对应桌号</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>60</y>
+         <width>461</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出相应的菜单及菜的状态</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>450</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>加菜</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>440</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>结账</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="chefwindow">
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>371</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出厨师，显示厨师对应菜单，厨师可以对菜单进行操作</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>101</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出厨师号和名字</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>50</y>
+         <width>471</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出厨师对应的菜单及菜的情况，并可以进行操作</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="recordwindow">
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>120</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>列出营业历史记录</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="inforwindow">
+      <widget class="QPushButton" name="waiterBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>服务员信息</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chefBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>150</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>厨师信息</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="deskBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>270</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>餐桌信息</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="roomBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>390</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>房间信息</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="menuBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>500</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>菜单信息</string>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="inforstack">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>30</y>
+         <width>1091</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>13</number>
+       </property>
+       <widget class="QWidget" name="waiterinfor">
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>30</y>
+           <width>241</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>列出服务员姓名，编号，可选择</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>50</y>
+           <width>441</width>
+           <height>251</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>相应服务员的信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="changewaiter">
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>150</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>修改服务员信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="addwaiter"/>
+       <widget class="QWidget" name="chefinfor">
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>181</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>列出厨师姓名，编号，可选择</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>50</y>
+           <width>331</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>相应厨师的信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="changechef">
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>150</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>修改厨师信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="addchef"/>
+       <widget class="QWidget" name="deskinfor">
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>181</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>列出餐桌编号，可选择</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>30</y>
+           <width>331</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>相应餐桌的信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="changedesk">
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>160</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>修改餐桌信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="adddesk"/>
+       <widget class="QWidget" name="roominfor">
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>181</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>列出房间编号，可选择</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>60</y>
+           <width>331</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>相应房间的信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="changeroom">
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>150</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>修改房间信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="addroom"/>
+       <widget class="QWidget" name="menuinfor">
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>181</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>列出菜名和编号，可选择</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>331</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>相应菜的信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="changemenu">
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>170</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>修改菜的信息</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="addmenu"/>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="recordBtn">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>20</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>营业记录</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="manageInfoBtn">
+     <property name="geometry">
+      <rect>
+       <x>1080</x>
+       <y>20</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>管理信息</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
