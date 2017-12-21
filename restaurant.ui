@@ -130,6 +130,19 @@
         <string>确认</string>
        </property>
       </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>210</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>娃哈哈嘻嘻哈哈</string>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="orderdishwindoww">
       <widget class="QLabel" name="label_2">
@@ -384,7 +397,7 @@
         </rect>
        </property>
        <property name="currentIndex">
-        <number>13</number>
+        <number>14</number>
        </property>
        <widget class="QWidget" name="waiterinfor">
         <widget class="QLabel" name="label_14">
